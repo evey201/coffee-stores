@@ -1,4 +1,4 @@
-import styles from './banner.module.css'
+import styles from "./banner.module.css";
 
 export const Banner = ({ buttonText, handleClick }) => {
   return (
@@ -9,7 +9,11 @@ export const Banner = ({ buttonText, handleClick }) => {
           <span className={styles.title2}>Connoisseur</span>
         </h1>
         <p className={styles.subTitle}>Discover your local coffee shops!</p>
-        <button className={styles.button} onClick={handleClick}>{buttonText}</button>
+        <div className={styles.buttonWrapper}>
+          <button className={styles.button} onClick={handleClick}>
+            {buttonText}
+          </button>
+        </div>
       </div>
     </>
   );

@@ -10,7 +10,7 @@ class MyDocument extends Document {
             <link rel="preload" href="/fonts/IBMPlexSans-SemiBold.ttf" as="font" crossOrigin="anonymous"></link>
         </Head>
         <body>
-          <Main></Main>
+          <Main />
           <NextScript />
         </body>
       </Html>

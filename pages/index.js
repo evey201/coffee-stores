@@ -1,13 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image';
-import { Banner } from '../components'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Banner } from "../components";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
-
-  const buttonCLicked = () => {
+  const buttonClicked = () => {
     console.log("clicked");
-  }
+  };
   return (
     <div className={styles.container}>
       <Head>
@@ -17,11 +16,22 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Banner buttonText="View Stores nearby" handleClick={buttonCLicked} />
+        <Banner
+          titleOne="Coffee"
+          titleTwo="Connoisseur"
+          buttonText="View Stores nearby"
+          description="Discover your local coffee shops!"
+          handleClick={buttonClicked}
+        />
         <div className={styles.heroImage}>
-          <Image src="/static/hero-image.png" width={700} height={400} alt="Hero image" />
+          <Image
+            src="/static/hero-image.png"
+            width={700}
+            height={400}
+            alt="Hero image"
+          />
         </div>
       </main>
     </div>
-  )
+  );
 }
